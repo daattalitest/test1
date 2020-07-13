@@ -3,10 +3,10 @@ remote_theme: daattali/beautiful-jekyll@2.3.0
 # --- Basic options --- #
 
 # Name of website
-title: staticman test
+title: staticman testaa
 
 # Short description of your site
-description: test staticman
+description: test staticmanaa
 
 # Your name to show in the footer
 author: dean
@@ -50,6 +50,14 @@ highlighter: rouge
 
 kramdown:
   input: GFM
+
+staticman:
+  repository : "daattalitest/test1" # GitHub username/repository eg. "daattali/beautiful-jekyll"
+  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+#  endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
+#  reCaptcha:
+#    siteKey  : # Use your own site key, you need to apply for one on Google
+#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 
 # Exclude these files from production siteML values (more information on Jekyll's site)
