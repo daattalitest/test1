@@ -59,7 +59,6 @@ defaults:
       path: ""
     values:
       layout: "page"
-      footer-extra: custom_footer.html
       nav-short: true
 
 exclude:
