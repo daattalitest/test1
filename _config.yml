@@ -1,0 +1,76 @@
+remote_theme: daattali/beautiful-jekyll@2.3.0
+
+# --- Basic options --- #
+
+# Name of website
+title: staticman test
+
+# Short description of your site
+description: test staticman
+
+# Your name to show in the footer
+author: dean
+
+# --- List of links in the navigation bar --- #
+
+navbar-links:
+  Blog: "https://deanattali.com/"
+  Open-Source: "https://deanattali.com/projects"
+  Schedule meeting: "https://calendly.com/attalitech/meeting"
+  Contact: "https://deanattali.com/contact"
+
+# --- Footer options --- #
+
+# Select the social network links that you want to show in the footer.
+# Uncomment the links you want to show and add your information to each one.
+# If you don't want to show a link to an RSS feed, set rss to "false".
+social-network-links:
+  email: "dean@attalitech.com"
+  facebook: deanattali
+  github: daattali
+  twitter: daattali
+  stackoverflow: "3943160/daattali"
+  calendly: "attalitech/meeting"
+
+# --- General options --- #
+
+# How to display the link to your website in the footer
+# Remove this if you don't want a link in the footer
+url-pretty: "AttaliTech.com"
+
+footer-img: "/assets/img/footer-bg.png"
+
+# Fill in your Google Analytics ID to track your website using GA
+google_analytics: "UA-59820529-1"
+
+# Output options (more information on Jekyll's site)
+timezone: "America/Toronto"
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+
+
+# Exclude these files from production siteML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      footer-extra: custom_footer.html
+      nav-short: true
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Beautiful Jekyll / Dean Attali
+# 2fc73a3a967e97599c9763d05e564189
